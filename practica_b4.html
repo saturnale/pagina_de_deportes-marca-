@@ -5,57 +5,311 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: #c90000;">
+    <div class="container-fluid pt-5 pb-4" style="background-color: #ffffff;"></div>
+    <nav class="navbar navbar-expand-lg pb-1 pt-1" style="background-color: #e10000;">
         <div class="container-fluid">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown ms-5 ps-4">
                     <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Fútbol
+                        Fútbol
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
                     </a>
-                    <ul class="dropdown-menu rounded-0" style="background-color: #101624; width: 1250px;">
+                    <ul class="dropdown-menu rounded-0">
                         <div class="row">
 
                             <div class="col-3">
-                                <li><p class="text-secondary ms-3 h5" style="font-size: 20px;">España</p></li>
+                                <li><p class="text-secondary ms-3 fw-bold" style="font-size: 20px;">España</p></li>
                                 <li><a class="dropdown-item text-white fw-bold" href="#">LALIGA EA Sports</a></li>
-                                <div class="row">
-                                    <div class="col-4 border-end border-secondary">
-                                        <li><a class="dropdown-item fw-bold" href="#" style="color: #c6c6c6; font-size: 13px;">Calendario</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
                                     </div>
-                                    <div class="col-4 border-end border-secondary">
-                                        <li><a class="dropdown-item fw-bold" href="#" style="color: #c6c6c6; font-size: 13px;">Clasificación</a></li>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
                                     </div>
-                                    <div class="col-4">
-                                        <li><a class="dropdown-item fw-bold" href="#" style="color: #c6c6c6; font-size: 13px;">Equipos</a></li>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Equipos</a>
                                     </div>
                                 </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Liga F Moeve</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">LALIGA Hypermotion</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Equipos</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold mt-2" href="#">Primera Federación</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Segunda Federación</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Tercera Federación</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Copa del Rey</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Copa de la Reina</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Más fútbol</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Supercopa de España</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Supercopa de España femenina</a></li>
                             </div>
 
                             <div class="col-3">
-                                <li><a class="dropdown-item text-white" href="#">Action</a></li>
-                                <li><a class="dropdown-item text-white" href="#">Another action</a></li>
+                                <li>
+                                    <a class="dropdown-item text-white h5 fw-bold mb-2" href="#">
+                                        Internacional
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Premier League</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Equipos</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Bundesliga</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Equipos</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Serie A</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Equipos</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Ligue 1</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Equipos</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Primeira Liga de Portugal</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Equipos</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Liga Saudí</a></li>
                             </div>
 
                             <div class="col-3">
-                                <li><a class="dropdown-item text-white" href="#">Action</a></li>
-                                <li><a class="dropdown-item text-white" href="#">Another action</a></li>
+                                <li><a class="dropdown-item text-white fw-bold mt-5" href="#">Mundial</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Fase de grupos</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Resultados</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Champions League</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Equipos</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Champions League femenina</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Europa League</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Equipos</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Conference League</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Equipos</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Youth League</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Supercopa de Europa</a></li>
                             </div>
 
                             <div class="col-3">
-                                <li><a class="dropdown-item text-white" href="#">Action</a></li>
-                                <li><a class="dropdown-item text-white" href="#">Another action</a></li>
+                                <li>
+                                    <a class="dropdown-item text-white h5 fw-bold" href="#">
+                                        América
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Argentina</a></li>
+                                <div class="dropdown-item-d-container mt-3">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Chile</a></li>
+                                <div class="dropdown-item-d-container mt-3">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Colombia</a></li>
+                                <div class="dropdown-item-d-container mt-3">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Estados Unidos</a></li>
+                                <div class="dropdown-item-d-container mt-3">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">México</a></li>
+                                <div class="dropdown-item-d-container mt-3">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Venezuela</a></li>
+                                <div class="dropdown-item-d-container mt-3">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </ul>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Baloncesto
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Motor
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Polideportivo
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </a>
+                </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active text-white fw-bold" aria-current="page" href="#">Más+</a>
                 </li>
             </ul>
+            <form class="d-flex me-5 pe-4" role="search">
+                <input class="search-bar form-control me-2 rounded-0" type="search" placeholder="Buscar en marca.com" aria-label="Search"/>
+            </form>
         </div>
     </nav>
+    <div class="container-fluid py-4" style="background-color: #101624;"></div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
