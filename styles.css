@@ -1,4 +1,18 @@
-.dropdown-menu {
+.link-divider {
+    position: relative;
+}
+.link-divider:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5px;
+    height: 35px;
+    background-color: #dee2e6;
+}
+
+.dropdown-menu-a {
     background-color: rgba(13, 25, 36, 0.916);
     position: fixed !important;
     top: 150px !important;
@@ -42,5 +56,19 @@
 }
 
 .search-bar {
+    font-weight: 500;
     width: 255px;
+}
+
+.search-bar::placeholder {
+    color: #919191;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    color: #000000;
+    font-weight: 500;
 }
