@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container-fluid d-flex align-items-center gap-2 pt-1 pb-1" style="background-color: #ffffff;">
+    <div id="topContainer" class="container-fluid d-flex align-items-center gap-2 pt-1 pb-1" style="background-color: #ffffff;">
         <a href="#" class="link-divider d-flex align-items-center ms-5 ps-5 pe-3">
             <img src="/img/Redbull.png" alt="Redbull" style="width: 50px;">
             <span class="fw-bold">Redbull</span>
@@ -32,7 +32,12 @@
                 </svg>
             </button>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">ES</a></li>
+                <li>
+                    <a class="dropdown-item" href="#">
+                        <img src="icons/spain_icon.png" alt="Spanish" style="width: 10px;">
+                        <span class="fw-bold">ES</span>
+                    </a>
+                </li>
                 <li><a class="dropdown-item" href="#">MX</a></li>
                 <li><a class="dropdown-item" href="#">USA - EN</a></li>
                 <li><a class="dropdown-item" href="#">USA - ES</a></li>
@@ -42,12 +47,12 @@
         <button type="button" class="btn btn-white border fw-bold" style="color: #e10000;">Iniciar sesión</button>
     </div>
 
-    <nav class="navbar navbar-expand-lg pb-1 pt-1 sticky-top" style="background-color: #e10000;">
+    <nav id="mainNavbar" class="navbar navbar-expand-lg pb-1 pt-1 sticky-top" style="background-color: #e10000;">
         <div class="container-fluid">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown ms-5 ps-4">
                     <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Fútbol
+                        Calendario
                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                         </svg>
@@ -311,7 +316,7 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Baloncesto
+                        Resultados
                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                         </svg>
@@ -319,7 +324,7 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Motor
+                        Equipos
                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                         </svg>
@@ -327,7 +332,7 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Polideportivo
+                        Pilotos
                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                         </svg>
@@ -338,33 +343,89 @@
                 </li>
             </ul>
             <form class="d-flex me-5 pe-4 position-relative" role="search">
-                <input class="search-bar form-control me-2 rounded-0 display-5" type="search" placeholder="Buscar en marca.com" aria-label="Search"/>
+                <input class="search-bar form-control me-2 rounded-0 display-5" type="search" placeholder="Buscar en Formula1.com" aria-label="Search"/>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#808080" viewBox="0 0 16 16" 
                 style="position: absolute; right: 40px; top: 50%; transform: translateY(-50%) scaleX(-1); pointer-events: none;">
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.098zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                 </svg>     
             </form>
+            <img src="img/F1.png" alt="F1" class="d-flex justify-content-between" style="width: 80px; visibility: hidden;">
         </div>
     </nav>
     
-    <div class="container-fluid py-4" style="background-color: #101624;"></div>
+    <div id="downContainer" class="container-fluid py-2 pb-1" style="background-color: #ebebeb;">
+        <div class="d-flex justify-content-center gap-2">
+            <a href="#">
+                <img src="img/Mclaren.png" alt="Mercedes" style="width: 50px; height: 20px;">
+            </a>
+            <a href="#">
+                <img src="img/Red-Bull-Racing.png" alt="Redbull Racing" style="width: 50px; height: 20px;">
+            </a>
+            <a href="#">
+                <img src="img/Williams_Racing.png" alt="Williams Racing" style="width: 50px; height: 20px;">
+            </a>
+            <a href="#">
+                <img src="img/Aston-Martin.png" alt="Aston Martin" style="width: 50px; height: 20px;">
+            </a>
+            <a href="#">
+                <img src="img/Haas.png" alt="Haas" style="width: 50px; height: 20px;">
+            </a>    
+            <a href="#">
+                <img src="img/Cadillac.png" alt="Cadillac" style="width: 50px; height: 20px;">
+            </a>
+            <a href="#">
+                <img src="img/Alpine.png" alt="Alpine" style="width: 50px; height: 20px;">
+            </a>
+            <a href="#">
+                <img src="img/Audi-Revolut.png" alt="Cadillac" style="width: 50px; height: 20px;">
+            </a>
+            <a href="#">
+                <img src="img/ART_Grand_Prix.png" alt="ART Grand Prix" style="width: 50px; height: 20px;">
+            </a>
+                <a href="#">
+                <img src="img/Campos-Racing.png" alt="Campos Racing" style="width: 50px; height: 20px;">
+            </a>
+                <a href="#">
+                <img src="img/Hitech.png" alt="Hitech" style="width: 50px; height: 20px;">
+            </a>
+                <a href="#">
+                <img src="img/MP.png" alt="MP" style="width: 50px; height: 20px;">
+            </a>
+                <a href="#">
+                <img src="img/Prema.png" alt="Prema" style="width: 50px; height: 20px;">
+            </a>
+                <a href="#">
+                <img src="img/Rodin-Motorsport.png" alt="Rodin Motorsport" style="width: 50px; height: 20px;">
+            </a>
+            <a href="https://www.formula1.com/" target="_blank">
+                <h6 class="ms-5" style="font-size: 20px;">
+                    <span style="color: #e10000; font-weight: 700;">Formula1</span>
+                    <span style="font-weight: 700;">.com</span>
+                </h6>
+            </a>
+        </div>
+    </div>
     
     <div class="container-fluid d-flex align-items-center mt-5">
         <h5 class="d-flex align-items-center ms-5 ps-5 me-3 fw-bold">Agenda</h5>
-        <div class="d-flex align-items-center ms-3" style="background-color:#f1f1f1;">
-            <span class="text-white fw-bold px-2 py-1" style="background-color:#c90000; align-self:stretch; display:flex; align-items:center;">En directo</span>
-            <div class="px-3">
-                <div class="text-muted" style="font-size:13px;">Todas las noticias</div>
-                <div class="fw-bold">Última hora</div>
+        <a href="#">
+            <div class="d-flex align-items-center ms-3" style="background-color:#f1f1f1;">
+                <span class="text-white fw-bold px-2 py-1" style="background-color:#c90000; align-self:stretch; display:flex; align-items:center;">En directo</span>
+                <div class="px-3">
+                    <div class="text-muted" style="font-size:13px;">Todas las noticias</div>
+                    <div class="fw-bold">Última hora</div>
+                </div>
             </div>
-        </div>
-        <div class="d-flex align-items-center ms-3" style="background-color:#f1f1f1;">
-            <span class="text-white fw-bold px-2 py-1" style="background-color:#c90000; align-self:stretch; display:flex; align-items:center;">Lo mejor del día</span>
-            <div class="px-3">
-                <div class="text-muted" style="font-size:13px;">Agenda</div>
-                <div class="fw-bold">Jueves 23</div>
+        </a>
+        <a href="#">
+            <div class="d-flex align-items-center ms-3" style="background-color:#f1f1f1;">
+                <span class="text-white fw-bold px-2 py-1" style="background-color:#c90000; align-self:stretch; display:flex; align-items:center;">Lo mejor del día</span>
+                <div class="px-3">
+                    <div class="text-muted" style="font-size:13px;">Agenda</div>
+                    <div class="fw-bold">Jueves 23</div>
+                </div>
             </div>
-        </div>
+        </a>
         <div class="dropdown ms-auto">
             <button class="btn btn-white dropdown-toggle fw-bold me-5 pe-5" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #919191; font-size: 15px;">
                 Ver más directos
@@ -378,7 +439,6 @@
    <div class="container-fluid mt-5">
         <div class="row px-5 g-4">
 
-            <!-- Columna grande: Checo -->
             <div class="col-lg-7">
                 <div class="position-relative">
                     <a href="#">
@@ -406,7 +466,6 @@
                 </div>
             </div>
 
-            <!-- Columna chica: 3 noticias, repartidas en la altura de la columna grande -->
             <div class="col-lg-5 d-flex flex-column">
 
                 <div class="d-flex pb-2 flex-grow-1" style="min-height:0;">
