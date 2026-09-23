@@ -24,6 +24,11 @@
     margin: 0 !important;
 }
 
+.dropdown-item:hover {
+    background-color: rgba(13, 25, 36, 0);
+    color: #ff0000 !important;
+}
+
 .dropdown-item-d-container {
     display: flex;
     flex-direction: row;
@@ -64,8 +69,23 @@
     color: #919191;
 }
 
+.border-bottom {
+    border-bottom-width: 2px !important;
+}
+
+.news-thumb {
+    width: 140px;
+    height: 95px;
+    object-fit: cover;
+}
+
 a {
     text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color: #000000;
+    color: #ffffff;
 }
 
 span {
