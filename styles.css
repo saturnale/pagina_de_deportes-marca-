@@ -124,3 +124,97 @@ span {
     color: #000000;
     font-weight: 500;
 }
+
+.placeholder-img{
+  position: relative;
+  width: 100%;
+  height: 190px;
+  background: #1c1c1c; 
+}
+
+.category-tag{
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 2px;
+}
+.tag-carrera{ background: #E10600; }
+.tag-escuderia{ background: #1E1E2F; }
+.tag-pilotos{ background: #6A6A72; }
+
+.hero-card h3{
+  font-size: 19px;
+  line-height: 1.25;
+  margin-top: 10px;
+}
+.hero-card .author{
+  color: #6A6A72;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.secondary-item{
+  display: flex;
+  gap: 14px;
+}
+.secondary-item .meta{
+  font-size: 12px;
+  color: #6A6A72;
+}
+
+.bottom-card{
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+}
+
+.bottom-card .placeholder-img{ height: 100%; }
+
+.card-text-overlay{
+  position: absolute;
+  left: 16px; bottom: 14px; right: 16px;
+  color: #fff;
+}
+
+.card-text-overlay h3{
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.placeholder-img::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,.75) 100%);
+}
+
+@media (max-width: 991.98px){
+  .hero-card .placeholder-img{ height: 160px; }
+}
+
+@media (max-width: 575.98px){
+  .hero-card h3{ font-size: 17px; }
+  .secondary-item{ flex-direction: column; }
+  .news-thumb{ width: 100%; height: 170px; }
+  .bottom-card{ height: 190px; }
+}
+
+.news-divider {
+  border-left: 1px solid #dee2e6;
+  padding-left: 1.5rem;
+}
+
+@media (max-width: 991.98px) {
+  .news-divider {
+    border-left: none;
+    border-top: 1px solid #dee2e6;
+    padding-left: 0;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+  }
+}
