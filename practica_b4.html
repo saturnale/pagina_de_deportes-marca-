@@ -25,22 +25,46 @@
             <img src="/img/Formula-1.png" alt="Formula1" style="width: 100px;">
         </a>
         <div class="dropdown ms-5 ps-5">
-            <button class="btn btn-white border dropdown-toggle fw-bold" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #919191;">
-                ES
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+            <button class="btn btn-white border dropdown-toggle fw-bold d-flex align-items-center" type="button" id="langToggle" data-bs-toggle="dropdown" aria-expanded="false" style="color: #919191;">
+                <img id="selectedLangFlag" src="icons/spain_icon.png" alt="ES" style="width: 15px;" class="me-1">
+                <span id="selectedLangText">ES</span>
+                <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                 </svg>
             </button>
             <ul class="dropdown-menu">
                 <li>
-                    <a class="dropdown-item" href="#">
-                        <img src="icons/spain_icon.png" alt="Spanish" style="width: 10px;">
-                        <span class="fw-bold">ES</span>
-                    </a>
+                    <div class="dropdown-lang border-bottom">
+                        <a class="dropdown-item" href="#" data-flag="icons/spain_icon.png" data-text="ES">
+                            <img src="icons/spain_icon.png" alt="Spanish" style="width: 15px;">
+                            <span>ES</span>
+                        </a>
+                    </div>
                 </li>
-                <li><a class="dropdown-item" href="#">MX</a></li>
-                <li><a class="dropdown-item" href="#">USA - EN</a></li>
-                <li><a class="dropdown-item" href="#">USA - ES</a></li>
+                <li>
+                    <div class="dropdown-lang border-bottom">
+                        <a class="dropdown-item" href="#" data-flag="icons/mexico_icon.png" data-text="MX">
+                            <img src="icons/mexico_icon.png" alt="Mexico" style="width: 15px;">
+                            <span>MX</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown-lang border-bottom">
+                        <a class="dropdown-item" href="#" data-flag="icons/united_states_icon.png" data-text="EN">
+                            <img src="icons/united_states_icon.png" alt="USA" style="width: 15px;">
+                            <span>EN</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown-lang">
+                        <a class="dropdown-item" href="#" data-flag="icons/united_states_icon.png" data-text="ES">
+                            <img src="icons/united_states_icon.png" alt="USA" style="width: 15px;">
+                            <span>ES</span>
+                        </a>
+                    </div>
+                </li>
             </ul>
         </div>
         <button type="button" class="btn text-white fw-bold" style="background-color: #e10000;">Suscríbete</button>
@@ -49,7 +73,10 @@
 
     <nav id="mainNavbar" class="navbar navbar-expand-lg pb-1 pt-1 sticky-top" style="background-color: #e10000;">
         <div class="container-fluid">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto m-0 p-0">
+                <a href="#" class="navbar-compact-extra me-3">
+                    <img src="/img/F1.png" alt="F1" style="width: 30px;">
+                </a>
                 <li class="nav-item dropdown ms-5 ps-4">
                     <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Calendario
@@ -61,202 +88,138 @@
                         <div class="row">
 
                             <div class="col-3">
-                                <li><p class="text-secondary ms-3 fw-bold" style="font-size: 20px;">España</p></li>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">LALIGA EA Sports</a></li>
+                                <li><p class="text-secondary ms-3 fw-bold" style="font-size: 20px;">Temporada 2026</p></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Calendario completo</a></li>
                                 <div class="dropdown-item-d-container mt-2">
                                     <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
-                                    </div>
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
-                                    </div>
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Equipos</a>
-                                    </div>
-                                </div>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">Liga F Moeve</a></li>
-                                <div class="dropdown-item-d-container mt-2">
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
-                                    </div>
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
-                                    </div>
-                                </div>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">LALIGA Hypermotion</a></li>
-                                <div class="dropdown-item-d-container mt-2">
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
-                                    </div>
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
-                                    </div>
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Equipos</a>
-                                    </div>
-                                </div>
-                                <li><a class="dropdown-item text-white fw-bold mt-2" href="#">Primera Federación</a></li>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">Segunda Federación</a></li>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">Tercera Federación</a></li>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">Copa del Rey</a></li>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">Copa de la Reina</a></li>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">Más fútbol</a></li>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">Supercopa de España</a></li>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">Supercopa de España femenina</a></li>
-                            </div>
-
-                            <div class="col-3">
-                                <li>
-                                    <a class="dropdown-item text-white h5 fw-bold mb-2" href="#">
-                                        Internacional
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">Premier League</a></li>
-                                <div class="dropdown-item-d-container mt-2">
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
-                                    </div>
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
-                                    </div>
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Equipos</a>
-                                    </div>
-                                </div>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">Bundesliga</a></li>
-                                <div class="dropdown-item-d-container mt-2">
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
-                                    </div>
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
-                                    </div>
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Equipos</a>
-                                    </div>
-                                </div>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">Serie A</a></li>
-                                <div class="dropdown-item-d-container mt-2">
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
-                                    </div>
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
-                                    </div>
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Equipos</a>
-                                    </div>
-                                </div>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">Ligue 1</a></li>
-                                <div class="dropdown-item-d-container mt-2">
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
-                                    </div>
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
-                                    </div>
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Equipos</a>
-                                    </div>
-                                </div>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">Primeira Liga de Portugal</a></li>
-                                <div class="dropdown-item-d-container mt-2">
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
-                                    </div>
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
-                                    </div>
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Equipos</a>
-                                    </div>
-                                </div>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">Liga Saudí</a></li>
-                            </div>
-
-                            <div class="col-3">
-                                <li><a class="dropdown-item text-white fw-bold mt-5" href="#">Mundial</a></li>
-                                <div class="dropdown-item-d-container mt-2">
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
-                                    </div>
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Fase de grupos</a>
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Próxima carrera</a>
                                     </div>
                                     <div class="dropdown-item-d">
                                         <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Resultados</a>
                                     </div>
                                 </div>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">Champions League</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Gran Premio de España</a></li>
                                 <div class="dropdown-item-d-container mt-2">
                                     <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Horarios</a>
                                     </div>
                                     <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Resultados</a>
                                     </div>
                                     <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Equipos</a>
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Vueltas rápidas</a>
                                     </div>
                                 </div>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">Champions League femenina</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Gran Premio de Mónaco</a></li>
                                 <div class="dropdown-item-d-container mt-2">
                                     <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Horarios</a>
                                     </div>
                                     <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Resultados</a>
                                     </div>
                                 </div>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">Europa League</a></li>
-                                <div class="dropdown-item-d-container mt-2">
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
-                                    </div>
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
-                                    </div>
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Equipos</a>
-                                    </div>
-                                </div>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">Conference League</a></li>
-                                <div class="dropdown-item-d-container mt-2">
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
-                                    </div>
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
-                                    </div>
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Equipos</a>
-                                    </div>
-                                </div>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">Youth League</a></li>
-                                <div class="dropdown-item-d-container mt-2">
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
-                                    </div>
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
-                                    </div>
-                                </div>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">Supercopa de Europa</a></li>
+                                <li><a class="dropdown-item text-white fw-bold mt-2" href="#">Gran Premio de Silverstone</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Gran Premio de Monza</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Gran Premio de Abu Dabi</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Ver calendario completo</a></li>
                             </div>
 
                             <div class="col-3">
                                 <li>
-                                    <a class="dropdown-item text-white h5 fw-bold" href="#">
-                                        América
+                                    <a class="dropdown-item text-white h5 fw-bold mb-2" href="#">
+                                        Pilotos
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                                         </svg>
                                     </a>
                                 </li>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">Argentina</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Max Verstappen</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Perfil</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Resultados</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Checo Pérez</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Perfil</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Resultados</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Lewis Hamilton</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Perfil</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Resultados</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Charles Leclerc</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Lando Norris</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Kimi Antonelli</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Tabla completa de pilotos</a></li>
+                            </div>
+
+                            <div class="col-3">
+                                <li><a class="dropdown-item text-white fw-bold mt-5" href="#">Red Bull Racing</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Pilotos</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Resultados</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Ferrari</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Pilotos</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Resultados</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Mercedes</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Pilotos</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Resultados</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">McLaren</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Pilotos</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Resultados</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Aston Martin</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Williams</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Alpine</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Tabla de constructores</a></li>
+                            </div>
+
+                            <div class="col-3">
+                                <li>
+                                    <a class="dropdown-item text-white h5 fw-bold" href="#">
+                                        Otras categorías
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Fórmula 2</a></li>
                                 <div class="dropdown-item-d-container mt-3">
                                     <div class="dropdown-item-d">
                                         <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
@@ -265,7 +228,7 @@
                                         <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
                                     </div>
                                 </div>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">Chile</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Fórmula 3</a></li>
                                 <div class="dropdown-item-d-container mt-3">
                                     <div class="dropdown-item-d">
                                         <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
@@ -274,7 +237,7 @@
                                         <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
                                     </div>
                                 </div>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">Colombia</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">F1 Academy</a></li>
                                 <div class="dropdown-item-d-container mt-3">
                                     <div class="dropdown-item-d">
                                         <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
@@ -283,7 +246,7 @@
                                         <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
                                     </div>
                                 </div>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">Estados Unidos</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Fórmula E</a></li>
                                 <div class="dropdown-item-d-container mt-3">
                                     <div class="dropdown-item-d">
                                         <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
@@ -292,24 +255,7 @@
                                         <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
                                     </div>
                                 </div>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">México</a></li>
-                                <div class="dropdown-item-d-container mt-3">
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
-                                    </div>
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
-                                    </div>
-                                </div>
-                                <li><a class="dropdown-item text-white fw-bold" href="#">Venezuela</a></li>
-                                <div class="dropdown-item-d-container mt-3">
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Calendario</a>
-                                    </div>
-                                    <div class="dropdown-item-d">
-                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
-                                    </div>
-                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Karting</a></li>
                             </div>
                         </div>
                     </ul>
@@ -321,6 +267,66 @@
                             <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                         </svg>
                     </a>
+                    <ul class="dropdown-menu dropdown-menu-a rounded-0">
+                        <div class="row">
+
+                            <div class="col-3">
+                                <li><p class="text-secondary ms-3 fw-bold" style="font-size: 20px;">Por Temporada</p></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Temporada 2026</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Pilotos</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Constructores</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Temporada 2025</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Pilotos</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Constructores</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold mt-2" href="#">Temporada 2024</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Archivo histórico</a></li>
+                            </div>
+
+                            <div class="col-3">
+                                <li><p class="text-secondary ms-3 fw-bold" style="font-size: 20px;">Por Gran Premio</p></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Gran Premio de España</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Carrera</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Gran Premio de Mónaco</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Clasificación</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Carrera</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold mt-2" href="#">Gran Premio de Silverstone</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Gran Premio de Monza</a></li>
+                            </div>
+
+                            <div class="col-3">
+                                <li><p class="text-secondary ms-3 fw-bold" style="font-size: 20px;">Estadísticas</p></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Vueltas rápidas</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Pole positions</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Récords históricos</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Comparador de pilotos</a></li>
+                            </div>
+                        </div>
+                    </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -329,6 +335,84 @@
                             <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                         </svg>
                     </a>
+                    <ul class="dropdown-menu dropdown-menu-a rounded-0">
+                        <div class="row">
+
+                            <div class="col-3">
+                                <li><p class="text-secondary ms-3 fw-bold" style="font-size: 20px;">Parrilla 2026</p></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Red Bull Racing</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Pilotos</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Monoplaza</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Ferrari</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Pilotos</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Monoplaza</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Mercedes</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Pilotos</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Monoplaza</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold mt-2" href="#">McLaren</a></li>
+                            </div>
+
+                            <div class="col-3">
+                                <li><p class="text-secondary ms-3 fw-bold" style="font-size: 20px;">Media tabla</p></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Aston Martin</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Pilotos</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Monoplaza</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Alpine</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Pilotos</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Monoplaza</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Williams</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Pilotos</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Monoplaza</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold mt-2" href="#">Haas</a></li>
+                            </div>
+
+                            <div class="col-3">
+                                <li><p class="text-secondary ms-3 fw-bold" style="font-size: 20px;">Cola de parrilla</p></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Cadillac</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Audi</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Kick Sauber</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">RB</a></li>
+                                <li><a class="dropdown-item text-white fw-bold mt-3" href="#">Clasificación de constructores</a></li>
+                            </div>
+
+                        </div>
+                    </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -337,6 +421,76 @@
                             <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                         </svg>
                     </a>
+                    <ul class="dropdown-menu dropdown-menu-a rounded-0">
+                        <div class="row">
+
+                            <div class="col-3">
+                                <li><p class="text-secondary ms-3 fw-bold" style="font-size: 20px;">Top del campeonato</p></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Max Verstappen</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Perfil</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Resultados</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Checo Pérez</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Perfil</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Resultados</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Charles Leclerc</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Perfil</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Resultados</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold mt-2" href="#">Lando Norris</a></li>
+                            </div>
+
+                            <div class="col-3">
+                                <li><p class="text-secondary ms-3 fw-bold" style="font-size: 20px;">Jóvenes promesas</p></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Kimi Antonelli</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Perfil</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Resultados</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Oliver Bearman</a></li>
+                                <div class="dropdown-item-d-container mt-2">
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold ms-2" href="#" style="color: #b0b0b0; font-size: 13px;">Perfil</a>
+                                    </div>
+                                    <div class="dropdown-item-d">
+                                        <a class="dropdown-item fw-bold" href="#" style="color: #b0b0b0; font-size: 13px;">Resultados</a>
+                                    </div>
+                                </div>
+                                <li><a class="dropdown-item text-white fw-bold mt-2" href="#">Franco Colapinto</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Todos los novatos</a></li>
+                            </div>
+
+                            <div class="col-3">
+                                <li><p class="text-secondary ms-3 fw-bold" style="font-size: 20px;">Leyendas</p></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Lewis Hamilton</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Fernando Alonso</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Michael Schumacher</a></li>
+                                <li><a class="dropdown-item text-white fw-bold" href="#">Ayrton Senna</a></li>
+                                <li><a class="dropdown-item text-white fw-bold mt-3" href="#">Clasificación de pilotos</a></li>
+                            </div>
+
+                        </div>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active text-white fw-bold" aria-current="page" href="#">Más+</a>
@@ -349,7 +503,16 @@
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.098zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                 </svg>     
             </form>
-            <img src="img/F1.png" alt="F1" class="d-flex justify-content-between" style="width: 80px; visibility: hidden;">
+            <button type="button" class="navbar-compact-extra btn btn-link p-0 me-3" aria-label="Buscar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#ffffff" viewBox="0 0 16 16"
+                style="transform: scaleX(-1);">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.098zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+            </button>
+            <div class="navbar-compact-extra gap-2">
+                <button type="button" class="btn text-white fw-bold" style="background-color: #ffffff; color: #e10000 !important;">Suscríbete</button>
+                <button type="button" class="btn btn-outline-light fw-bold">Iniciar sesión</button>
+            </div>
         </div>
     </nav>
     
@@ -440,22 +603,22 @@
         <div class="row px-5 g-4">
 
             <div class="col-lg-7">
-                <div class="position-relative">
-                    <a href="#">
+                <a href="#">
+                    <div class="position-relative">
                         <img src="img/Checo.jpg" alt="Checo" class="w-100" style="display: block;">
-                    </a>
 
-                    <span class="position-absolute top-0 start-0 px-2 py-1 fw-bold text-white" 
-                        style="background-color: #0291ff; font-size: 12px;">
-                        F1
-                    </span>
+                        <span class="position-absolute top-0 start-0 px-2 py-1 fw-bold text-white" 
+                            style="background-color: #0291ff; font-size: 12px;">
+                            F1
+                        </span>
 
-                    <div class="position-absolute bottom-0 start-0 w-100 p-3" 
-                        style="background: linear-gradient(to top, rgba(0,0,0,0.85), transparent); color: #fff;">
-                        <p class="mb-1" style="font-size: 13px;">Descubre los detalles del podio</p>
-                        <h2 class="fw-bold mb-0">Checo Pérez celebra en el podio</h2>
+                        <div class="position-absolute bottom-0 start-0 w-100 p-3" 
+                            style="background: linear-gradient(to top, rgba(0,0,0,0.85), transparent); color: #fff;">
+                            <p class="mb-1" style="font-size: 13px;">Descubre los detalles del podio</p>
+                            <h2 class="fw-bold mb-0">Checo Pérez celebra en el podio</h2>
+                        </div>
                     </div>
-                </div>
+                </a>
 
                 <div class="d-flex align-items-center">
                     <p class="mb-1 mt-3 fw-bold" style="color: #919191; font-size: 11px;">RUBÉN JIMENEZ ENRIQUE MEDINA</p>
