@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formula 1</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+     <link rel="icon" href="/img/f1.ico" type="image/x-icon">
 </head>
 <body>
     <div id="topContainer" class="container-fluid d-flex align-items-center gap-2 pt-1 pb-1" style="background-color: #ffffff;">
@@ -26,7 +27,7 @@
         </a>
         <div class="dropdown ms-5 ps-5">
             <button class="btn btn-white border dropdown-toggle fw-bold d-flex align-items-center" type="button" id="langToggle" data-bs-toggle="dropdown" aria-expanded="false" style="color: #919191;">
-                <img id="selectedLangFlag" src="icons/spain_icon.png" alt="ES" style="width: 15px;" class="me-1">
+                <img id="selectedLangFlag" src="/img/icons/spain_icon.png" alt="ES" style="width: 15px;" class="me-1">
                 <span id="selectedLangText">ES</span>
                 <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
@@ -35,32 +36,32 @@
             <ul class="dropdown-menu">
                 <li>
                     <div class="dropdown-lang border-bottom">
-                        <a class="dropdown-item" href="#" data-flag="icons/spain_icon.png" data-text="ES">
-                            <img src="icons/spain_icon.png" alt="Spanish" style="width: 15px;">
+                        <a class="dropdown-item" href="#" data-flag="/img/icons/spain_icon.png" data-text="ES">
+                            <img src="/img/icons/spain_icon.png" alt="Spanish" style="width: 15px;">
                             <span>ES</span>
                         </a>
                     </div>
                 </li>
                 <li>
                     <div class="dropdown-lang border-bottom">
-                        <a class="dropdown-item" href="#" data-flag="icons/mexico_icon.png" data-text="MX">
-                            <img src="icons/mexico_icon.png" alt="Mexico" style="width: 15px;">
+                        <a class="dropdown-item" href="#" data-flag="/img/icons/mexico_icon.png" data-text="MX">
+                            <img src="/img/icons/mexico_icon.png" alt="Mexico" style="width: 15px;">
                             <span>MX</span>
                         </a>
                     </div>
                 </li>
                 <li>
                     <div class="dropdown-lang border-bottom">
-                        <a class="dropdown-item" href="#" data-flag="icons/united_states_icon.png" data-text="EN">
-                            <img src="icons/united_states_icon.png" alt="USA" style="width: 15px;">
+                        <a class="dropdown-item" href="#" data-flag="/img/icons/united_states_icon.png" data-text="EN">
+                            <img src="/img/icons/united_states_icon.png" alt="USA" style="width: 15px;">
                             <span>EN</span>
                         </a>
                     </div>
                 </li>
                 <li>
                     <div class="dropdown-lang">
-                        <a class="dropdown-item" href="#" data-flag="icons/united_states_icon.png" data-text="ES">
-                            <img src="icons/united_states_icon.png" alt="USA" style="width: 15px;">
+                        <a class="dropdown-item" href="#" data-flag="/img/icons/united_states_icon.png" data-text="ES">
+                            <img src="/img/icons/united_states_icon.png" alt="USA" style="width: 15px;">
                             <span>ES</span>
                         </a>
                     </div>
@@ -71,7 +72,7 @@
         <button type="button" class="btn btn-white border fw-bold" style="color: #e10000;">Iniciar sesión</button>
     </div>
 
-    <nav id="mainNavbar" class="navbar navbar-expand-lg pb-1 pt-1 sticky-top" style="background-color: #e10000;">
+    <nav id="mainNavbar" class="navbar pb-1 pt-1 sticky-top" style="background-color: #e10000;">
         <div class="container-fluid">
             <ul class="navbar-nav me-auto m-0 p-0">
                 <a href="#" class="navbar-compact-extra me-3">
@@ -569,7 +570,7 @@
         </div>
     </div>
     
-    <div class="container-fluid d-flex align-items-center mt-5">
+    <div id="agendaSection" class="container-fluid d-flex align-items-center mt-5">
         <h5 class="d-flex align-items-center ms-5 ps-5 me-3 fw-bold">Agenda</h5>
         <a href="#">
             <div class="d-flex align-items-center ms-3" style="background-color:#f1f1f1;">

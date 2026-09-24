@@ -1,3 +1,48 @@
+#mainNavbar .container-fluid {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+#mainNavbar .navbar-nav {
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+}
+#mainNavbar .nav-item {
+    white-space: nowrap;
+    margin-right: 1.5rem;
+}
+
+#mainNavbar .nav-item:last-of-type {
+    margin-right: 0;
+}
+
+#agendaSection {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+#agendaSection > * {
+    flex-shrink: 0;
+}
+
+#mainNavbar .container-fluid,
+#agendaSection {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#mainNavbar .container-fluid::-webkit-scrollbar,
+#agendaSection::-webkit-scrollbar {
+    display: none;
+}
+
+#topContainer button {
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+#downContainer .d-flex > * {
+    flex-shrink: 0;
+}
+
 .link-divider {
     position: relative;
 }
@@ -11,7 +56,6 @@
     height: 35px;
     background-color: #dee2e6;
 }
-
 .topContainer-collapsed,
 .downContainer-collapsed {
     display: none !important;
@@ -35,6 +79,8 @@
 }
 .navbar-collapsed .navbar-compact-extra {
     display: flex;
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .navbar-collapsed {
